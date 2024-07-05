@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Television Frame</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tv-frame {
+            position: relative;
+            width: 100vw;
+            height: 100%;
+            background-image: url('full-screen.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .tv-screen {
+            position: absolute;
+            top: 15%;
+            left: 3%;
+            width: 68%;
+            height: 70%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tv-frame">
+        <iframe class="tv-screen" src="https://johnnie-portfolio.vercel.app/"></iframe>
+    </div>
+</body>
+
+</html>
